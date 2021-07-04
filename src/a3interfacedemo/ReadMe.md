@@ -1,4 +1,68 @@
-package interfacedemo;
+Interface lies same as class
+Interface have methods but not body
+
+
+in class
+
+public void getData(){
+}
+
+In Interface we can only defines signature of the method
+Can not write code in method
+
+
+------
+a3interfacedemo
+
+A1CentralTraffic
+
+
+package a3interfacedemo;
+
+public interface A1CentralTraffic {
+	
+	public void greenGo();
+	//allowed
+	
+	/*
+	 * public void green1() {
+	 * }
+	 */
+	//not allowed
+	//method body not allowed
+	
+	//default and static allowed
+	
+	
+	public void redStop();
+	
+	public void flashYellow();
+	
+	//Interface contains variable also
+	//but make sure it's public
+	//by default access modifiers /nature is public
+	
+	 int a = 4;
+	
+}
+
+-------------
+
+A2ContinentTraffic
+
+package a3interfacedemo;
+
+public interface A2ContinentTraffic {
+	
+	public void trainSymbol();
+
+}
+
+------------------
+
+A3AustralianTraffic
+
+package a3interfacedemo;
 
 public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic {
 	
@@ -19,14 +83,24 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//at.trainSymbol();
 		//not work
 		
+		//O/P
+//		greenGo Implementation
+//		redStop Implementation
+//		flashYellow Implementation
+		
 		A3AustralianTraffic att = new A3AustralianTraffic();
 		//object created of class
 		
-		att.walkingSymbol();	
+		att.walkingSymbol();
+		//OP
+		//Walking Symbol
+		
+
 		
 		A2ContinentTraffic ct = new A3AustralianTraffic();
 		//top casting
-		
+		//OP
+		//train Symbol
 		ct.trainSymbol();
 	}
 
