@@ -1,74 +1,174 @@
-a1basic
+# A1Firstclass
 
---------------
-A1Firstclass
 
+~~~
 package a1basic;
 
 public class A1Firstclass {
-	
-	static int a =4;
+  
+/**
+* Class: All code written in classes only Code is encapsulated into classes
+* FileName === ClassName
+*
+* what is public static void main All Execution of code should be placed in
+* this block Java Control directly in this block only Responsible for execution]
+*/
 
-	public static void main(String[] args) {
-		System.out.print("Hi");
-		System.out.print("Hello World");
-		//HiHello World
-		
-		System.out.println("Hi");
-		System.out.println("Hello World");
-		//Hi
-		//Hello World
-		
-		//'ln' stands for nextline
-		
-		// for comment
-		
-		/*
-		 *  // multi line comment
-		 */
-		
-		//to print int value you need to store in some variable
-		//int a =4;
-		
-		System.out.println(a);
-		//4
-		
-		//if you store in some variable then no need to give "" in syso
-		//if we give variable in  "" then java will take as string
-		
-		System.out.println("a");
-		//a
-		
-		//Methods: block in java
-		//once write use multiple times
-		
-		//no methods are allowed inside main block
-		//inside class ouside main
-		//create an object and use in method
-		
-		//objects: instance/reference of a class
-		
-		//allocate memory for that object for class - new keyword use for that
-		//return type is class only
-		
-		A1Firstclass s = new A1Firstclass();
-		//syntax of an object
-		
-		s.getData();
-		//I am in method
-		
-		A2Secondclass sc = new A2Secondclass();
-		sc.setData();
-		//I am in second class method
-	}
-	
-	public void getData() {
-		System.out.println("I am in method");
-		//return 2; int
-		//return hello String
-	}
+// V-4
+
+static int  _a_ = 4;
+
+int b = 5;
+  
+public static void main(String[] args) {
+
+System.out.print("Hi");
+
+System.out.print("Hello World");
+// HiHello World
+
+System.out.println("Hi");
+System.out.println("Hello World");
+// Hi
+// Hello World
+
+// 'ln' stands for nextline
+
+  
+
+// for singlr linecomment
+
+/*
+*  multi line comment
+*/
+ 
+
+// to print int value you need to store in some variable
+
+// int a = 4;
+
+// here Number 4 is assigning to a variable
+
+// = - used for assigning value to the left side variable
+
+  
+
+System.**_out_**.println(_a_);
+
+// 4
+
+  
+
+// V-5
+
+  
+
+// if you store in some variable then no need to give "" in syso
+
+// if we give variable in "" then java will take as string
+
+  
+
+System.**_out_**.println("a");
+
+// a
+
+  
+
+// Methods: blocks in java class
+
+// once write use multiple times
+
+// public void getData() {}
+
+// getData - Name of block of code or MethodName
+
+// void/int/String - return type of method
+
+// void - doesn't return anything
+
+// public/private - Access Modifiers
+
+// To Call/Execute this method - must be called from main method
+
+  
+
+// No methods are allowed inside main block
+
+// inside class outside main method
+
+  
+
+// create an object for the class where you're method is defined
+
+// and use (objectName) in main method
+
+  
+
+// V-6
+
+// object: instance/reference of a class
+
+  
+
+// allocate memory for that object for class - new keyword use for that
+
+// return type is class only
+
+  
+
+A1Firstclass s = **new** A1Firstclass();
+
+// syntax of an object
+
+  
+
+/**
+
+* A1Firstclass - returnType - Always ClassName s - object reference
+
+* variable/name new - used for memory allocation A1Firstclass() - Object of
+
+* class -
+
+*/
+
+  
+
+s.getData();
+
+// I am in method
+
+System.**_out_**.println(s.b);
+
+// 5
+
+  
+
+// A2Secondclass - class object and calling setData Method
+
+A2Secondclass sc = **new** A2Secondclass();
+
+sc.setData();
+
+// I am in second class method
+
 }
 
+  
+
+**public** **void** getData() {
+
+System.**_out_**.println("I am in method");
+
+// return 2; - int
+
+// return "hello"; - String
+
+}
+
+}
+~~~
 
 --------------
 
