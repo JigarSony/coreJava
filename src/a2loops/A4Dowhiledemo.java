@@ -1,5 +1,5 @@
 package a2loops;
-
+//Video-14
 public class A4Dowhiledemo {
 
 	public static void main(String[] args) {
@@ -15,6 +15,6 @@ public class A4Dowhiledemo {
 	 * In do while first it's executed 1 time and then
 	 * it will check boolean condition
 	 * 
-	 * 1 loop of execution is guarantee in do while loop 
+	 * one loop of execution is guaranteed in do while loop 
 	 */
 }

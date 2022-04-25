@@ -22,11 +22,13 @@ public class A4Reversedemo {
 		 */
 
 		System.out.println(rev);
+		//madam
 
-		if (s.equals("rev")) {
+		if (s.equals(rev)) {
 			System.out.println("Palindrome");
 		} else {
 			System.out.println("Not Palindrome");
 		}
+		//Palindrome
 	}
 }
