@@ -1,25 +1,43 @@
-Interface lies same as class
-Interface have methods but not body
+# a3interfacedemo
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/3.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/4.png?raw=true)
 
 
-in class
-
-public void getData(){
-}
-
-In Interface we can only defines signature of the method
-Can not write code in method
+## A1CentralTraffic
 
 
-------
-a3interfacedemo
-
-A1CentralTraffic
-
-
+```
 package a3interfacedemo;
-
+//Video-20
 public interface A1CentralTraffic {
+	
+	/*
+	 * Interface lies same as class
+	 * Interface have methods but not body
+	 * in class public void getData(){ }
+	 * In Interface we can only defines signature of the method 
+	 * We can not write code in method
+	 * public void getData()
+	 * Why Interface then?
+	 * Ex. Traffic Rules
+	 * Bank Methods/Rules/Regulations
+	 * 
+	 * 
+	 * Then Classes should define and Implement methods present in Interface
+	 * 
+	 * Declare Interface?
+	 * public interface <InterfaceName>
+	 * 
+	 * To Implement in Class?
+	 * public class <className> implements <interfaceName>
+	 * 
+	 * We can Implements multiple interface also
+	 * public class <className> implements <interfaceName1>, <interfaceName2>
+	 * Through this we can achieve/Implement multiple Inheritance
+	 * Which directly not supported by JAVA
+	 */
 	
 	public void greenGo();
 	//allowed
@@ -43,27 +61,26 @@ public interface A1CentralTraffic {
 	//by default access modifiers /nature is public
 	
 	 int a = 4;
-	
 }
+```
 
--------------
+## A2ContinentTraffic
 
-A2ContinentTraffic
-
+```
 package a3interfacedemo;
-
+//Video-21
 public interface A2ContinentTraffic {
 	
 	public void trainSymbol();
 
 }
+```
 
-------------------
+## A3AustralianTraffic
 
-A3AustralianTraffic
-
+```
 package a3interfacedemo;
-
+//Video-20,21
 public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic {
 	
 	//to implements any interface to class
@@ -84,9 +101,9 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//not work
 		
 		//O/P
-//		greenGo Implementation
-//		redStop Implementation
-//		flashYellow Implementation
+		//greenGo Implementation
+		//redStop Implementation
+		//flashYellow Implementation
 		
 		A3AustralianTraffic att = new A3AustralianTraffic();
 		//object created of class
@@ -96,7 +113,6 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//Walking Symbol
 		
 
-		
 		A2ContinentTraffic ct = new A3AustralianTraffic();
 		//top casting
 		//OP
@@ -137,3 +153,5 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		System.out.println("train Symbol");
 	}
 }
+```
+

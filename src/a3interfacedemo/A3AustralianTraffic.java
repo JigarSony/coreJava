@@ -1,5 +1,5 @@
 package a3interfacedemo;
-
+//Video-20,21
 public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic {
 	
 	//to implements any interface to class
@@ -20,9 +20,9 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//not work
 		
 		//O/P
-//		greenGo Implementation
-//		redStop Implementation
-//		flashYellow Implementation
+		//greenGo Implementation
+		//redStop Implementation
+		//flashYellow Implementation
 		
 		A3AustralianTraffic att = new A3AustralianTraffic();
 		//object created of class
@@ -32,7 +32,6 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//Walking Symbol
 		
 
-		
 		A2ContinentTraffic ct = new A3AustralianTraffic();
 		//top casting
 		//OP
