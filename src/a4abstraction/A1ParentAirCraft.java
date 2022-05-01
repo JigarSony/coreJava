@@ -1,6 +1,23 @@
 package a4abstraction;
-
+//Video-23
 public abstract class A1ParentAirCraft {
+	
+	/*
+	 * Abstraction: Hiding Implementation
+	 * What Object does rather then how it does
+	 * 
+	 * Abstract class contains abstract and Non-Abstract methods
+	 * Partial abstraction
+	 * 
+	 * for NonAbstract Method - Extended Class can be Implements
+	 * 
+	 * How to Define?
+	 * public abstract class <className>
+	 * 
+	 * How to Use in other class?
+	 * 
+	 * public class <className> extends <abstractClassName>
+	 */
 	
 	public void engine() {
 		System.out.println("Follow Engine Guidelines");

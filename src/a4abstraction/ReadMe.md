@@ -1,11 +1,36 @@
-a4abstraction
+# a4abstraction
 
-A1ParentAirCraft
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/5.png?raw=true)
 
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/6.png?raw=true)
 
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/7.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/8.png?raw=true)
+
+## A1ParentAirCraft
+---
+```
 package a4abstraction;
-
+//Video-23
 public abstract class A1ParentAirCraft {
+	
+	/*
+	 * Abstraction: Hiding Implementation
+	 * What Object does rather then how it does
+	 * 
+	 * Abstract class contains abstract and Non-Abstract methods
+	 * Partial abstraction
+	 * 
+	 * for NonAbstract Method - Extended Class can be Implements
+	 * 
+	 * How to Define?
+	 * public abstract class <className>
+	 * 
+	 * How to Use in other class?
+	 * 
+	 * public class <className> extends <abstractClassName>
+	 */
 	
 	public void engine() {
 		System.out.println("Follow Engine Guidelines");
@@ -29,15 +54,13 @@ public abstract class A1ParentAirCraft {
 	//
 	//Point of abstraction
 	//Every abstract class have to be inherited 
-	
 }
-
--------
-
-A2ChildEmirates
-
+```
+## A2ChildEmirates
+---
+```
 package a4abstraction;
-
+//Video-23
 public class A2ChildEmirates extends A1ParentAirCraft {
 
 	public static void main(String[] args) {
@@ -62,3 +85,4 @@ public class A2ChildEmirates extends A1ParentAirCraft {
 	}
 
 }
+```
