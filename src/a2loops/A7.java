@@ -1,5 +1,5 @@
 package a2loops;
-
+//Video-18
 public class A7 {
 
 	public static void main(String[] args) {
@@ -38,6 +38,17 @@ public class A7 {
 			}
 			System.out.println();
 		}
+		
+		//OR
+		System.out.println("***************");
+		
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(j + 1);
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
 
 		/*
 		 * 3 
@@ -51,7 +62,20 @@ public class A7 {
 		for (int i = 1; i < 4; i++) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print(l);
-				 l = l + 3;
+				l = l + 3;
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+		
+		//OR
+		System.out.println("***************");
+		
+		int m = 3;
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(m);
+				m = m + 3;
 				System.out.print(" ");
 			}
 			System.out.println();

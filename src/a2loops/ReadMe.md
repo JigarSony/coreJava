@@ -1,9 +1,10 @@
-a2loops
+# A2 Loops
 
-A1ifElsedemo
+## A1ifElsedemo
 
+```
 package a2loops;
-
+//Video-11
 public class A1ifElsedemo {
 
 	public static void main(String[] args) {
@@ -49,13 +50,13 @@ public class A1ifElsedemo {
 		 */
 	}
 }
+```
+---
+## A2Forloopdemo
 
------------
-
-A2Forloopdemo
-
+```
 package a2loops;
-
+//Video-12
 public class A2Forloopdemo {
 
 	public static void main(String[] args) {
@@ -63,7 +64,7 @@ public class A2Forloopdemo {
 		//Print 1 to 10
 		
 		/*
-		 * for(initialization;condition;increment/dectement)
+		 * for(initialisation;condition;increment/decrement)
 		 * {
 		 * }
 		 */
@@ -71,15 +72,22 @@ public class A2Forloopdemo {
 		for(int i=0;i<=5;i++) {
 			System.out.println(i);
 		}
+		
+		/*
+		 * For Debugging:
+		 * Double click on code - to debug
+		 * Then Run into Debug Mode
+		 * Then change the layout and play with Step Into and Step Over
+		 */
 	}
 }
+```
+---
+## A3Whiledemo
 
---------------
-
-A3Whiledemo
-
+```
 package a2loops;
-
+//Video-13
 public class A3Whiledemo {
 
 	public static void main(String[] args) {
@@ -88,12 +96,18 @@ public class A3Whiledemo {
 
 		// 1 to 10 print
 		/*
-		 * while (boolean){ //if condition is true then control will here }
+		 * while (boolean){
+		 *  //if condition is true then control will here
+		 *  }
+		 *  If boolean condition satisfied then goes into loop
+		 *  
+		 *  1. Boolean Value
+		 *  2. do some operation increment/decrement
+		 *  If no operation goes in infinite loop
 		 */
 
 		while (5 > 3) {
 			System.out.println("True");
-
 			break;
 		}
 		// True
@@ -112,60 +126,88 @@ public class A3Whiledemo {
 			System.out.println(i);
 			i++;
 		}
+		/*
+		 * 0
+		 * 1
+		 * 2
+		 * 3
+		 * 4
+		 * 5
+		 * 6
+		 * 7
+		 * 8
+		 * 9
+		 * 10
+		 */
 	}
 }
+```
+---
+## A4Dowhiledemo
 
----------------
-
-A4Dowhiledemo
-
+```
 package a2loops;
-
+//Video-14
 public class A4Dowhiledemo {
 
 	public static void main(String[] args) {
-		
-		int j=0;
+		/*
+		 * In do while first it's executed 1 time and then it will check boolean
+		 * condition
+		 * 
+		 * 1 loop of execution is guaranteed in do while loop
+		 */
+
+		int j = 0;
 		do {
 			System.out.println(j);
 			j++;
-		}while(j<10);
+		} while (j < 10);
+		/*
+		 * 0 1 2 3 4 5 6 7 8 9
+		 */
+
+		int k = 20;
+		do {
+			System.out.println(k);
+			k++;
+		} while (k < 10);
 	}
-	
-	/*
-	 * In do while first it's executed 1 time and then
-	 * it will check boolean condition
-	 * 
-	 * 1 loop of execution is guarantee in do while loop 
-	 */
+	// 20
+
 }
+```
+---
+## A5Nestedloop
 
--------------
-
-A5Nestedloop
-
+```
 package a2loops;
-
+//Video-16
 public class A5Nestedloop {
 
 	public static void main(String[] args) {
-		
-		for(int i=1;i<=4;i++) {
+
+		// nested loops works
+
+		for (int i = 1; i <= 4; i++) // (outer loop)this block will loop for 4 times
+		{
 			System.out.println("outer loop started");
-			for(int j=1;j<=4;j++) {
+			for (int j = 1; j <= 4; j++) // (inner loops)this block will loop for 4 times
+			{
 				System.out.println("inner loop");
 			}
 			System.out.println("outer loop finished");
 		}
+
 	}
 }
+```
+---
+## A6PyramidTriangle
 
-----------------
-
-A6PyramidTriangle
-
+```
 package a2loops;
-
+//Video-17
 public class A6PyramidTriangle {
 
 	public static void main(String[] args) {
@@ -177,29 +219,29 @@ public class A6PyramidTriangle {
 		 * 10
 		 */
 		System.out.println("Hello");
-		
-		int k=1;
-		
-		 for(int i=0;i<4;i++)
-		 {
-			 for(int j=1;j<=4-i;j++) {
-				 System.out.print(k);
-				 //System.out.print(" ");
-				 System.out.print("\t");
-				 k++;
-			 }
-			 //System.out.println();
-			 System.out.print("\n");
-			 //System.out.println("");
-		 }
+
+		int k = 1;
+
+		for (int i = 0; i < 4; i++) {
+			for (int j = 1; j <= 4 - i; j++) {
+				System.out.print(k);
+				// System.out.print(" ");
+				System.out.print("\t");
+				k++;
+			}
+			// System.out.println();
+			System.out.print("\n");
+			// System.out.println("");
+		}
 	}
 }
---------------
+```
+---
+## A7
 
-A7
-
+```
 package a2loops;
-
+//Video-18
 public class A7 {
 
 	public static void main(String[] args) {
@@ -238,6 +280,17 @@ public class A7 {
 			}
 			System.out.println();
 		}
+		
+		//OR
+		System.out.println("***************");
+		
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(j + 1);
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
 
 		/*
 		 * 3 
@@ -251,10 +304,27 @@ public class A7 {
 		for (int i = 1; i < 4; i++) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print(l);
-				 l = l + 3;
+				l = l + 3;
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+		
+		//OR
+		System.out.println("***************");
+		
+		int m = 3;
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j <= i; j++) {
+				System.out.print(m);
+				m = m + 3;
 				System.out.print(" ");
 			}
 			System.out.println();
 		}
 	}
 }
+```
+
+
+
