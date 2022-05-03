@@ -1,3 +1,13 @@
+# Array
+
+```
+If I want to store multiple  values into a single containers then we can use array
+A container which store multiple value of same data types
+```
+
+## A1Arraydemo
+
+```
 package a7Array;
 //Video - 30,31
 public class A1Arraydemo {
@@ -61,3 +71,4 @@ public class A1Arraydemo {
 		 */
 	}
 }
+```

@@ -1,5 +1,5 @@
 package a5Inheritance;
-
+//Video - 24
 public class A1Parentdemo {
 
 	String color = "red";

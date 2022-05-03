@@ -1,5 +1,5 @@
 package a5Inheritance;
-
+//Video - 24
 public class A2Childdemo extends A1Parentdemo {
 
 	public static void main(String[] args) {

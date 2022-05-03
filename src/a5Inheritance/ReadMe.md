@@ -22,8 +22,8 @@ We can get all methods in child class by extending parent class in child class
 ## A1Parentdemo
  
  ```
- package a5Inheritance;
-
+package a5Inheritance;
+//Video - 24
 public class A1Parentdemo {
 
 	String color = "red";
@@ -50,7 +50,7 @@ public class A1Parentdemo {
  
  ```
  package a5Inheritance;
-
+//Video - 24
 public class A2Childdemo extends A1Parentdemo {
 
 	public static void main(String[] args) {
