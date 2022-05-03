@@ -3,7 +3,8 @@ package a6Polymorphism;
 public class A1FunctionOverloading {
 	
 	/*
-	 * FunctionOverloading: 
+	 * FunctionOverloading:
+	 * Method Overloading: 
 	 * Same function name but with different arguments
 	 * Either arguments number or arguments data type
 	 * should be different
