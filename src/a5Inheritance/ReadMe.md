@@ -1,8 +1,28 @@
-a5Inheritance
+# Inheritance
 
-A1Parentdemo
+```Parent - Child Concept
+We can get all methods in child class by extending parent class in child class
 
-package a5Inheritance;
+ > Syntax: public class <childClass> extends <parentClass>
+ ```
+ 
+ ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/9.png?raw=true)
+ 
+ ~~~
+ Java Does not allowed multiple Inheritance
+ 
+ For that we're using Interface
+ ~~~
+ 
+ ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/10.png?raw=true)
+ 
+ 
+ ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/11.png?raw=true)
+ 
+## A1Parentdemo
+ 
+ ```
+ package a5Inheritance;
 
 public class A1Parentdemo {
 
@@ -24,11 +44,12 @@ public class A1Parentdemo {
 		System.out.println("audioSystem code is implemented");
 	}
 }
--------------
-
-A2Childdemo
-
-package a5Inheritance;
+ ```
+ 
+## A2Childdemo
+ 
+ ```
+ package a5Inheritance;
 
 public class A2Childdemo extends A1Parentdemo {
 
@@ -59,3 +80,4 @@ public class A2Childdemo extends A1Parentdemo {
 	//class b(){}
 	//class c() extends a,b{} -- no no not allowed
 }
+ ```
