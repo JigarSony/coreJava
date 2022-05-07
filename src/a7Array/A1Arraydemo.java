@@ -12,6 +12,8 @@ public class A1Arraydemo {
 		 * [] - Indicates terms for an array
 		 */
 		
+		//Instantiating array
+		//allocating memory and then 
 		int a [] = new int [5];
 		/*
 		 * declare an array and allocates memory for the value

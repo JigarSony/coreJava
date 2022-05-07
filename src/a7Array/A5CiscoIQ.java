@@ -1,12 +1,12 @@
 package a7Array;
-
+//Video-35
 public class A5CiscoIQ {
 
 	public static void main(String[] args) {
 		/*
 		 * Find out the minimum number,
-		 * Get Minimum number's row,
-		 * From that row Find maximum number
+		 * Get Minimum number's column,
+		 * From that column Find maximum number
 		 */
 		
 		/*

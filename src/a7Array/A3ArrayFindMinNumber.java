@@ -1,7 +1,7 @@
 package a7Array;
-
+//Video-34
 public class A3ArrayFindMinNumber {
-
+	//Find Minimum Number from this Matrix
 	public static void main(String[] args) {
 		int abc[][] = {{2,4,5},{3,1,7},{-1,2,0}};
 		int min = abc[0][0];
@@ -18,5 +18,4 @@ public class A3ArrayFindMinNumber {
 		}
 		System.out.println(min);
 	}
-
 }

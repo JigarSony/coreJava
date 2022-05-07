@@ -1,6 +1,8 @@
 package a7Array;
-//Video-31
+//Video-31,33
 public class A2MultiDimensionArraydemo {
+	//multi dimension array
+	//matrix kind of things
 
 	public static void main(String[] args) {
 		
@@ -16,10 +18,14 @@ public class A2MultiDimensionArraydemo {
 		
 		int a [][] = new int[2][3];
 		//a[row][column]
+		//a [x-axis] [y-axis]
 		
+		//first row
 		a[0][0]=1;
 		a[0][1]=2;
 		a[0][2]=3;
+		
+		//second row
 		a[1][0]=4;
 		a[1][1]=5;
 		a[1][2]=6;
@@ -37,8 +43,6 @@ public class A2MultiDimensionArraydemo {
 			System.out.println("");
 		}
 		//1 2 3
-		//4 5 6 
-		
+		//4 5 6 		
 	}
-
 }

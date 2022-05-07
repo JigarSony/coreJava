@@ -1,7 +1,7 @@
 package a7Array;
-
+//Video-34
 public class A4arryFindMaxNumber {
-
+	//Find Maximum Number from this Matrix
 	public static void main(String[] args) {
 		
 		/*
