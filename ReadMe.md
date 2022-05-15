@@ -938,7 +938,8 @@ public class A2ChildEmirates extends A1ParentAirCraft {
 
 # Inheritance
 
-```Parent - Child Concept
+```
+Parent - Child Concept
 We can get all methods in child class by extending parent class in child class
 
  > Syntax: public class <childClass> extends <parentClass>
@@ -1038,13 +1039,12 @@ package a6Polymorphism;
 //Video - 27
 public class A1FunctionOverloading {
 	
-	/*
-	 * FunctionOverloading:
-	 * Method Overloading: 
-	 * Same function name but with different arguments
-	 * Either arguments number or arguments data type
-	 * should be different
-	 */
+FunctionOverloading:
+Method Overloading: 
+Same function name but with different arguments
+Either arguments number or arguments data type
+should be different
+
 
 	public static void main(String[] args) {
 		A1FunctionOverloading fo = new A1FunctionOverloading();
@@ -1758,6 +1758,184 @@ public class A2TypesofConstructor {
 	public A2TypesofConstructor(int a, int b) {
 		System.out.println("I am in Multi Parameterised Constructor");
 	}
+}
+```
+---
+
+# Super Keyword
+
+```
+Generally If Same Variable/Method available in both parent and child class then It gives preference to local variable
+WhenEver Parent-child class model also same
+
+If you want to print parent class variable then super keyword comes into the picture
+but if same variable Name available in child class then preference goes to child, local variable first
+
+When you say super.<variableName> - Parent class
+In Here also if local method is available with same Name
+Then - I am in Child Methods
+If not then - I am in Parent Methods
+If you wanted to call your parent method then put
+super.<methodName> in childClass method
+
+//Same thing goes with constructors as well
+If I want to use parent class constructor in child class
+Simply call super method in child class constructor
+Rule: super(); It always be at first line in constructor
+```
+
+```
+package aa10SuperKeyword;
+//Video-46
+public class A1ChildDemo extends A2ParentDemo{
+	
+	String Name = "ABCD";
+
+	public static void main(String[] args) {
+		
+		A1ChildDemo cd = new A1ChildDemo();
+		cd.getStringData();
+		//if local variable there then-ABCD
+		//If no local variable then-Hello
+		
+		cd.getData();
+	
+	}
+	
+	public void getStringData() {
+		System.out.println(Name);
+		System.out.println(super.Name);
+	}
+	//System.out.println(Name);
+	//ABCD
+	//System.out.println(super.Name);
+	//Hello
+	
+	/*
+	 * It gives preference to local variable
+	 * WhenEver Parent-child class model also same
+	 * 
+	 * If you want to print parent class variable then super keyword comes into the picture
+	 * 
+	 * If you comment String Name = "ABCD";
+	 * Then it'll take the Name variable directly from Parent class
+	 * Output:
+	 * Hello
+	 * Hello
+	 * 
+	 * but if same variable Name available in child class then preference goes to child,local variable first
+	 * 
+	 * When you say super.Name - Parent class
+	 * Name - Child Class
+	 */
+	
+	//Video-47
+	
+	/*
+	 * Created method getData in Parent class
+	 * cd.getData()
+	 * output:
+	 * I am in Parent Method
+	 */
+	
+	public void getData() {
+		super.getData();//same as variable to access parent class variable or method use super 
+		System.out.println("I am in Child Method");
+	}
+	
+	//I am in Parent Method
+	//I am in Child Method"
+	
+	/*
+	 * In Here also if local method is available with same Name
+	 * Then - I am in Child Methods
+	 * If not then - I am in Parent Methods
+	 * 
+	 * If you wanted to call your parent method then put
+	 * super.getData in childGetData method
+	 */
+	
+	//Same thing goes with constructors as well
+	
+	public A1ChildDemo() {
+		super(); //it always be at first line in constructor
+		System.out.println("Child Class Constructor");
+	}
+	/*
+	 * If I want to use parent class constructor in child class
+	 * Simply call super method in child class constructor
+	 * 
+	 * Rule: super(); It always be at first line in constructor
+	 */
+}
+
+```
+
+```
+package aa10SuperKeyword;
+//Video-46
+public class A2ParentDemo {
+	
+	String Name = "Hello";
+
+	public static void main(String[] args) {
+		
+	}
+	//Video-47
+	
+	public void getData() {
+		System.out.println("I am in Parent Method");
+	}
+	
+	public A2ParentDemo() {
+		System.out.println("Parent Class Constructor");
+	}
+}
+```
+
+---
+
+# This Keyword
+
+```
+So If some variable used defined globally
+And in Local Method you needs to use both local and global variable
+So in this case this keyword comes into the picture
+So this refers to class object
+object scope lies in class level 
+```
+
+## aa11ThisKeyword
+
+## A1ThisDemo
+
+```
+package aa11ThisKeyword;
+
+public class A1ThisDemo {
+	
+	int a = 2;
+	//this variable used in entire program
+	
+	public void getData() {
+		int a = 3;
+		System.out.println(a);//3
+		System.out.println(this.a);//2
+	}
+
+	public static void main(String[] args) {
+		A1ThisDemo td = new A1ThisDemo();
+		td.getData(); //3
+	}
+	
+	/*
+	 * So If some variable used defined globally
+	 * And in Local Method you needs to use both local and global variable
+	 * So in this case this keyword comes into the picture
+	 * 
+	 * So this refers to class object
+	 * object scope lies in class level 
+	 */
 }
 ```
 ---
