@@ -2656,4 +2656,84 @@ public class A5IntQue {
 
 }
 ```
+---
+# Final KeyWord
 
+```
+If you declare any variable to final 
+Then you can not change the value again
+through an error
+Constant variable
+class can be final - 
+Cannot use as parent class
+final class A1Final {}
+method can be final - 
+If you mark method as final then cannot override it again
+final void getData(){}
+```
+
+```
+package aa14FinalKeyword;
+
+public class A1Final {
+	
+	/*
+	 * If you declare any variable to final 
+	 * Then you can not change the value again
+	 * through an error
+	 * 
+	 * Constant variable
+	 * 
+	 * class can be final - 
+	 * If you mark class as final then cannot extend that class
+	 * Cannot use as parent class
+	 * 
+	 * final class A1Final {}
+	 * 
+	 * method can be final - 
+	 * If you mark method as final then cannot override it again
+	 * 
+	 * final void getData(){}
+	 * 
+	 */
+
+	public static void main(String[] args) {
+		
+		final int i = 4;
+		
+		//i = 5;
+		//If i do this then Error
+		//Remove final modifier of i
+	}
+}
+```
+
+```
+Package : Set of classes and Interface
+ java.lang - default package - in build in JVM
+without this we can't do anything
+main, int and all
+java.util: collections Interfaces
+import java.package.className
+userDefine package also
+```
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/17.png?raw=true)
+
+## AccessModifiers
+
+```
+public
+private
+protected
+default 
+```
+
+## Nature
+
+```
+default - anywhere in package
+public - anywhere in project/across all packages
+private - Inside class only - can not accessible outside of the class
+protected - Inside class, same packages and extended/sub class (outside packages)
+```
