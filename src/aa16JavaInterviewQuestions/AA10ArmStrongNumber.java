@@ -1,7 +1,7 @@
 package aa16JavaInterviewQuestions;
 
 
-public class ArmStrongNumber {
+public class AA10ArmStrongNumber {
 
 	public static void main(String[] args) {
 		isArmStrongNumber(153);
