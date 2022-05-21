@@ -2748,5 +2748,5 @@ ReadMe [aa17ArrayListConcept](https://github.com/JigarSony/coreJava/blob/master/
 
 ## LinkedList
 
-ReadMe [aa18LinkedListConcept](https://github.com/JigarSony/coreJava/blob/master/src/aa18LinkedList/ReadMe.md)
+ReadMe [aa18LinkedListConcept](https://github.com/JigarSony/coreJava/blob/master/src/aa18LinkedListConcept/ReadMe.md)
 
