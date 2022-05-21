@@ -29,7 +29,7 @@ public class A1Arraydemo {
 		a[4]=5;//initialised values into that array
 		
 		//array start from 0;
-		
+
 		for (int i=0;i<a.length;i++) {
 			System.out.println(a[i]); //retrieve values present in this array
 		}
@@ -43,7 +43,7 @@ public class A1Arraydemo {
 		 */
 		
 		System.out.println("*******************");
-//Video - 31
+		//Video - 31
 		//Another way to declare an array
 		//array literal
 		
