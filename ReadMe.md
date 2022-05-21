@@ -2739,6 +2739,6 @@ protected - Inside class, same packages and extended/sub class (outside packages
 ```
 
 ## Java Collections
-see documentation [aa16JavaCollections](aa16JavaCollections/ReadMe.md)
 
-see doc [aa16JavaCollections1] (https://github.com/JigarSony/coreJava/blob/master/aa16JavaCollections/ReadMe.md)
+ReadMe [aa16JavaCollections1](https://github.com/JigarSony/coreJava/blob/master/src/aa16JavaCollections/ReadMe.md)
+
