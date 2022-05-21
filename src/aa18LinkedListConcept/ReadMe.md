@@ -1,14 +1,47 @@
-package aa18LinkListConcept;
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/20.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/21.png?raw=true)
+		
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/22.png?raw=true)
+
+
+```
+LinkList: 
+It's Special collection/dynamic array
+1. Actual Data 2. Reference Node
+Head - Pointing to first Node
+Null - Last node pointing to null
+		 
+LinkedList<String> ll = new LinkedList<String>();
+		 
+add()
+addAll()
+addFirst()
+addLast()
+get()
+set()
+remove()
+removeFirst()
+removeLast()
+		 
+how to print all values?
+for loop
+advance for loop
+iterator
+while loop 
+```
+
+## aa18LinkedListConcept
+
+```
+package aa18LinkedListConcept;
 
 import java.util.Iterator;
 import java.util.LinkedList;
 
 public class A1LinkList {
 
-	public static void main(String[] args) {
-		
-		//![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/20.png?raw=true)
-		
+	public static void main(String[] args) {	
 		/*
 		 * LinkList: 
 		 * It's Special collection/dynamic array
@@ -16,10 +49,6 @@ public class A1LinkList {
 		 * Head - Pointing to first Node
 		 * Null - Last node pointing to null
 		 */
-		
-		//![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/21.png?raw=true)
-		
-		//![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/22.png?raw=true)
 		
 		LinkedList<String> ll = new LinkedList<String>();
 		
@@ -101,5 +130,6 @@ public class A1LinkList {
 			num++;
 		}
 	}
-
 }
+
+```

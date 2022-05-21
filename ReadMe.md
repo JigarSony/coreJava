@@ -2740,5 +2740,13 @@ protected - Inside class, same packages and extended/sub class (outside packages
 
 ## Java Collections
 
-ReadMe [aa16JavaCollections1](https://github.com/JigarSony/coreJava/blob/master/src/aa16JavaCollections/ReadMe.md)
+ReadMe [aa16JavaCollections](https://github.com/JigarSony/coreJava/blob/master/src/aa16JavaCollections/ReadMe.md)
+
+## ArrayList
+
+ReadMe [aa17ArrayListConcept](https://github.com/JigarSony/coreJava/blob/master/src/aa17ArrayListConcept/ReadMe.md)
+
+## LinkedList
+
+ReadMe [aa18LinkedListConcept](https://github.com/JigarSony/coreJava/blob/master/src/aa18LinkedList/ReadMe.md)
 
