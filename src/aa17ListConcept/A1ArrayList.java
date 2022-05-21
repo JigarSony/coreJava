@@ -24,7 +24,6 @@ public class A1ArrayList {
 		int a [] = new int[3];
 		//static array
 		
-		
 		ArrayList ar = new ArrayList();
 		//non generic arrayList object
 		
@@ -66,6 +65,12 @@ public class A1ArrayList {
 		for(int i = 0; i<ar.size(); i++) {
 			System.out.println(ar.get(i));
 		}// 40 10 20 30 40 50 50
+		
+		Iterator itt =  ar.iterator();
+		while (itt.hasNext()) {
+			System.out.println(itt.next());
+		}
+			
 		
 		//non generic vs. generic
 		//We're not defining which dataType - nonGeneric
@@ -109,8 +114,64 @@ public class A1ArrayList {
 			System.out.println(a2Employee.name);
 			System.out.println(a2Employee.age);
 			System.out.println(a2Employee.dep);
-			
 		}
 		
+		 //addAll(): add two arrayList objects
+		 ArrayList<String> ar5 = new ArrayList<String>();
+		 ar5.add("Selenium");
+		 ar5.add("QTP");
+		 ar5.add("JMeter");
+		 
+		 ArrayList<String> ar6 = new ArrayList<String>();
+		 ar6.add("JS");
+		 ar6.add("C#");
+		 ar6.add("python");
+		 ar6.add("Java");
+		 
+		 
+		 ar5.addAll(ar6);
+		 
+		 for(int i = 0; i<ar5.size(); i++) {
+			 System.out.println(ar5.get(i));
+			 /*
+			  * Selenium
+			  * QTP
+			  * JMeter
+			  * JS
+			  * C#
+			  * python
+			  * Java
+			  */
+		 }
+		 
+		 //removeAll() - remove ArrayList Object
+		 ar5.removeAll(ar6);
+		 for(int i = 0; i<ar5.size(); i++) {
+			 System.out.println(ar5.get(i));
+			 /*
+			  * Selenium
+			  * QTP
+			  * JMeter
+			  */
+		 }
+		 
+		 //retainAll() - common element 
+		 
+		 ArrayList<String> ar7 = new ArrayList<String>();
+		 ar7.add("Selenium");
+		 ar7.add("QTP");
+		 ar7.add("JMeter");
+		 
+		 ArrayList<String> ar8 = new ArrayList<String>();
+		 ar8.add("JS");
+		 ar8.add("C#");
+		 ar8.add("python");
+		 ar8.add("JMeter");
+		 
+		 ar7.retainAll(ar8);
+		 for(int i = 0; i<ar7.size(); i++) {
+			 System.out.println(ar7.get(i));
+			 //JMeter
+		 }
 	}
 }
