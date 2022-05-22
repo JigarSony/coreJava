@@ -2754,3 +2754,7 @@ ReadMe [aa18LinkedListConcept](https://github.com/JigarSony/coreJava/blob/master
 
 ReadMe [aa19HashMapConcept](https://github.com/JigarSony/coreJava/blob/master/src/aa19HashMapConcept/ReadMe.md)
 
+## Hashtable
+
+ReadMe [aa20HashtableConcept](https://github.com/JigarSony/coreJava/blob/master/src/aa20HashtableConcept/ReadMe.md)
+
