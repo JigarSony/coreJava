@@ -227,3 +227,5 @@ public class A3HowHashMapWorkInternally {
 ```
 
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/47.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/48.png?raw=true)
