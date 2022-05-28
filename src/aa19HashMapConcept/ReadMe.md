@@ -194,6 +194,8 @@ public class A2Employee {
 
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/46.png?raw=true)
 
+![alt text](https://imgur.com/uK1Cmsp)
+
 ## A3HowHashMapWorkInternally
 
 ```
