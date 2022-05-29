@@ -194,7 +194,6 @@ public class A2Employee {
 
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/46.png?raw=true)
 
-![alt text](https://imgur.com/uK1Cmsp)
 
 ## A3HowHashMapWorkInternally
 
@@ -411,6 +410,64 @@ public class A4DifferentWaysofcreatingHashMap {
 		//Map<String, String> map7 =  ImmutableMap.of("GoogleK", "GoogleV"...);
 		//System.out.println(map7.get("GoogleK"));
 		//Java
+	}
+}
+```
+
+## A5ConcurrentAndSynchronisedHashMap
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/48.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/49.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/50.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/51.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/52.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/53.png?raw=true)
+
+```
+package aa19HashMapConcept;
+
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+public class A5ConcurrentAndSynchronisedHashMap {
+	
+	/*
+	 * HashMap v/s HashTable v/s SynchronizedHashMap v/s ConcurrentHashMap
+	 * 
+	 * HashMap is not synchronised
+	 */
+
+	public static void main(String[] args) {
+		
+		//SynchronisedMap Method in collections Class:
+		Map<String,String> map1 = new HashMap<String, String>();
+		map1.put("1", "Tom");
+		map1.put("2", "Jery");
+		map1.put("3", "Mouse");
+		
+		//how to created synchronisedMap
+		Map<String,String> syncMap =  Collections.synchronizedMap(map1);
+		
+		System.out.println(syncMap);
+		//{1=Tom, 2=Jery, 3=Mouse}
+		
+		//concurrentHashmap
+		ConcurrentHashMap<String,String> conMap = new ConcurrentHashMap<>();
+		conMap.put("A", "Tom");
+		conMap.put("B", "Jery");
+		conMap.put("C", "Mouse");
+		
+		System.out.println(conMap.get("A"));
+		//Tom
+		
+		//Concurrent HashMap: Doesn't throws any ConcurrentModificationException
 	}
 }
 ```
