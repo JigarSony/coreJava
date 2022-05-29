@@ -471,3 +471,125 @@ public class A5ConcurrentAndSynchronisedHashMap {
 	}
 }
 ```
+
+## A6HashMaptoArrayList
+
+```
+package aa19HashMapConcept;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.List;
+
+public class A6HashMaptoArrayList {
+
+	public static void main(String[] args) {
+		HashMap<String, Integer> map1 = new HashMap<String, Integer>();
+		map1.put("Google", 100);
+		map1.put("Amazon", 200);
+		map1.put("Walmart", 300);
+		map1.put("Flipkart", 300);
+
+		Iterator it = map1.entrySet().iterator();
+
+		while (it.hasNext()) {
+			Map.Entry pairs = (Map.Entry) it.next();
+			System.out.println(pairs.getKey() + " - " + pairs.getValue());
+
+			/*
+			 * Google - 100 Walmart - 300 Flipkart - 300 Amazon - 200
+			 */
+		}
+		
+		//With Use of Lambda function
+		map1.forEach((k,v) -> System.out.println("Keys: " + k + " -> " + "Values: " + v));
+		/*
+		 * Keys: Google -> Values: 100
+		 * Keys: Walmart -> Values: 300
+		 * Keys: Flipkart -> Values: 300
+		 * Keys: Amazon -> Values: 200
+		 */
+
+		// convert hashMap keys into Arraylist
+		List<String> companyName = new ArrayList<String>(map1.keySet());
+		System.out.println(companyName);
+		//[Google, Walmart, Flipkart, Amazon]
+		for (String t : companyName) {
+			System.out.println(t);
+
+			/*
+			 * Google Walmart Flipkart Amazon
+			 */
+		}
+		
+		// convert hashMap values into Arraylist
+		List<Integer> empCountList = new ArrayList<Integer>(map1.values());
+		System.out.println(empCountList);
+		//[100, 300, 300, 200]
+		for (Integer t : empCountList) {
+			System.out.println(t);
+			/*
+			 * 100
+			 * 300
+			 * 300
+			 * 200
+			 */
+		}
+	}
+}
+```
+
+## A7LinkedHashMap
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/54.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/55.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/56.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/57.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/58.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/59.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/60.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/61.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/62.png?raw=true)
+
+```
+package aa19HashMapConcept;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class A7LinkedHashMap {
+
+	public static void main(String[] args) {
+		
+		LinkedHashMap<String, String> lhm = new LinkedHashMap<>();
+		
+		lhm.put("1", "A");
+		lhm.put("2", "B");
+		lhm.put("3", "C");
+		lhm.put("4", "D");
+		
+		System.out.println(lhm);
+		//{1=A, 2=B, 3=C, 4=D}
+		
+		HashMap<String, String> hm = new HashMap<>();
+		
+		hm.put("1", "A");
+		hm.put("22", "BB");
+		hm.put("333", "CCC");
+		hm.put("4", "D");
+		
+		System.out.println(hm);
+		//{22=BB, 1=A, 333=CCC, 4=D}
+	}
+}
+```
