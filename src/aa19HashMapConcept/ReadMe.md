@@ -593,3 +593,9 @@ public class A7LinkedHashMap {
 	}
 }
 ```
+
+## HashMap Interview Questions
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/63.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/64.png?raw=true)
