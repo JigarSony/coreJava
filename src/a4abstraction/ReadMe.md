@@ -37,7 +37,6 @@ public abstract class A1ParentAirCraft {
 	}
 	//non abstract method
 	//non concrete method
-
 	public void safetyGuidelines() {
 		System.out.println("Follow safety Guidelines");
 	}
@@ -62,7 +61,6 @@ public abstract class A1ParentAirCraft {
 package a4abstraction;
 //Video-23
 public class A2ChildEmirates extends A1ParentAirCraft {
-
 	public static void main(String[] args) {
 		A2ChildEmirates c = new A2ChildEmirates();
 		c.engine();
@@ -83,6 +81,5 @@ public class A2ChildEmirates extends A1ParentAirCraft {
 		// TODO Auto-generated method stub
 		System.out.println("Follow bodyColor Guidelines");
 	}
-
 }
 ```

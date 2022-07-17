@@ -6,7 +6,6 @@
 package a2loops;
 //Video-11
 public class A1ifElsedemo {
-
 	public static void main(String[] args) {
 		
 		//if..else loop
@@ -58,7 +57,6 @@ public class A1ifElsedemo {
 package a2loops;
 //Video-12
 public class A2Forloopdemo {
-
 	public static void main(String[] args) {
 		
 		//Print 1 to 10
@@ -89,11 +87,9 @@ public class A2Forloopdemo {
 package a2loops;
 //Video-13
 public class A3Whiledemo {
-
 	public static void main(String[] args) {
 		
 		// while loop
-
 		// 1 to 10 print
 		/*
 		 * while (boolean){
@@ -105,13 +101,11 @@ public class A3Whiledemo {
 		 *  2. do some operation increment/decrement
 		 *  If no operation goes in infinite loop
 		 */
-
 		while (5 > 3) {
 			System.out.println("True");
 			break;
 		}
 		// True
-
 		int k = 3;
 		while (5 < k) {
 			System.out.println("in side while");
@@ -119,9 +113,7 @@ public class A3Whiledemo {
 		}
 		System.out.println("outside side while");
 		// outside side while
-
 		int i = 0;
-
 		while (i <= 10) {
 			System.out.println(i);
 			i++;
@@ -149,7 +141,6 @@ public class A3Whiledemo {
 package a2loops;
 //Video-14
 public class A4Dowhiledemo {
-
 	public static void main(String[] args) {
 		/*
 		 * In do while first it's executed 1 time and then it will check boolean
@@ -157,7 +148,6 @@ public class A4Dowhiledemo {
 		 * 
 		 * 1 loop of execution is guaranteed in do while loop
 		 */
-
 		int j = 0;
 		do {
 			System.out.println(j);
@@ -166,7 +156,6 @@ public class A4Dowhiledemo {
 		/*
 		 * 0 1 2 3 4 5 6 7 8 9
 		 */
-
 		int k = 20;
 		do {
 			System.out.println(k);
@@ -174,7 +163,6 @@ public class A4Dowhiledemo {
 		} while (k < 10);
 	}
 	// 20
-
 }
 ```
 ---
@@ -184,11 +172,8 @@ public class A4Dowhiledemo {
 package a2loops;
 //Video-16
 public class A5Nestedloop {
-
 	public static void main(String[] args) {
-
 		// nested loops works
-
 		for (int i = 1; i <= 4; i++) // (outer loop)this block will loop for 4 times
 		{
 			System.out.println("outer loop started");
@@ -198,7 +183,6 @@ public class A5Nestedloop {
 			}
 			System.out.println("outer loop finished");
 		}
-
 	}
 }
 ```
@@ -209,7 +193,6 @@ public class A5Nestedloop {
 package a2loops;
 //Video-17
 public class A6PyramidTriangle {
-
 	public static void main(String[] args) {
 		
 		/*
@@ -219,9 +202,7 @@ public class A6PyramidTriangle {
 		 * 10
 		 */
 		System.out.println("Hello");
-
 		int k = 1;
-
 		for (int i = 0; i < 4; i++) {
 			for (int j = 1; j <= 4 - i; j++) {
 				System.out.print(k);
@@ -243,7 +224,6 @@ public class A6PyramidTriangle {
 package a2loops;
 //Video-18
 public class A7 {
-
 	public static void main(String[] args) {
 		
 		/*
@@ -262,7 +242,6 @@ public class A7 {
 			}
 			System.out.println();
 		}
-
 		System.out.println("***************");
 		
 		/*
@@ -291,7 +270,6 @@ public class A7 {
 			}
 			System.out.println();
 		}
-
 		/*
 		 * 3 
 		 * 6 9 
@@ -325,6 +303,3 @@ public class A7 {
 	}
 }
 ```
-
-
-

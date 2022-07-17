@@ -72,7 +72,6 @@ package a3interfacedemo;
 public interface A2ContinentTraffic {
 	
 	public void trainSymbol();
-
 }
 ```
 
@@ -112,26 +111,22 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//OP
 		//Walking Symbol
 		
-
 		A2ContinentTraffic ct = new A3AustralianTraffic();
 		//top casting
 		//OP
 		//train Symbol
 		ct.trainSymbol();
 	}
-
 	@Override
 	public void greenGo() {
 		// TODO Auto-generated method stub
 		System.out.println("greenGo Implementation");
 	}
-
 	@Override
 	public void redStop() {
 		// TODO Auto-generated method stub
 		System.out.println("redStop Implementation");
 	}
-
 	@Override
 	public void flashYellow() {
 		// TODO Auto-generated method stub
@@ -146,7 +141,6 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 		//can not call this methods by 
 		//CentralTraffic at = new AustralianTraffic(); this object
 	}
-
 	@Override
 	public void trainSymbol() {
 		// TODO Auto-generated method stub
@@ -154,4 +148,3 @@ public class A3AustralianTraffic implements A1CentralTraffic, A2ContinentTraffic
 	}
 }
 ```
-

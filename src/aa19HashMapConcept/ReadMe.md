@@ -611,3 +611,11 @@ public class A7LinkedHashMap {
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/69.png?raw=true)
 
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/70.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/71.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/72.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/73.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/74.png?raw=true)
