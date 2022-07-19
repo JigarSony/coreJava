@@ -643,6 +643,7 @@ public class A7LinkedHashMap {
 ```
 package aa19HashMapConcept;
 
+import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeMap;
 
@@ -682,12 +683,54 @@ public class A8TreeMapConcept {
 		Set<Integer> greaterthan3K = map.tailMap(3000).keySet();
 		System.out.println(greaterthan3K);
 		//[10000]
+		
+		
+		//Sorting happens on Keys
+		
+		TreeMap<String, Integer> userMap = new TreeMap<>();
+		
+		userMap.put("Zebra", 100);
+		userMap.put("Happy", 400);
+		userMap.put("Larry", 1200);
+		userMap.put("Alebert", 900);
+		userMap.put("Suzuki", 1000);
+		
+		userMap.forEach((k,v) -> System.out.println(" Key = "+k + " Value = "+v));
+		
+		/**
+		 *  Key = Alebert Value = 900
+		 *  Key = Happy Value = 400
+		 *  Key = Larry Value = 1200
+		 *  Key = Suzuki Value = 1000
+		 *  Key = Zebra Value = 100
+		 */
+		
+		//if you want in reverse order `Comparator.reverseOrder()`
+		
+		TreeMap<String, Integer> userMap1 = new TreeMap<>(Comparator.reverseOrder());
+		
+		userMap1.put("Zebra", 100);
+		userMap1.put("Happy", 400);
+		userMap1.put("Larry", 1200);
+		userMap1.put("Alebert", 900);
+		userMap1.put("Suzuki", 1000);
+		
+		userMap1.forEach((k,v) -> System.out.println(" Key = "+k + " Value = "+v));
+		
+		/**
+		 * Key = Zebra Value = 100
+		 * Key = Suzuki Value = 1000
+		 * Key = Larry Value = 1200
+		 * Key = Happy Value = 400
+		 * Key = Alebert Value = 900
+		 */
 	}
-
 }
-
 ```
 
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/84.png?raw=true)
 
 ![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/85.png?raw=true)
+
+![alt text](https://github.com/JigarSony/coreJava/blob/master/Screenshots/86.png?raw=true)
+
